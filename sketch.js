@@ -8,11 +8,18 @@ function setup() {
 	canvas = createCanvas(windowWidth, windowHeight);
 	canvas.parent('sketch-div');
 	resetSketch()
+	// startQSort()
+
 	reset = select('#reset')
 	reset.mousePressed(resetSketch)
+	home = select('#home')
+	home.mousePressed(goHome)
 }
 
+function goHome() {
+	open("../index.html", "_self")
 
+}
 
 
 function resetSketch() {

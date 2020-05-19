@@ -2,6 +2,16 @@
 <html>
 
 <head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-165037439-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-165037439-1');
+</script>
+
 	<title>QuickSort Visualization
 	</title>
 	<link rel="stylesheet" href="assets/css/main.css" />
@@ -12,18 +22,18 @@
 </head>
 
 <body>
-	<button type="button" align="center" class="btn draw-border" id="reset">Randomize</button>
-	
-	<div id="sketch-div"></div>
-	<div id="btn">
-		<!-- <button type="button" class="btn draw-border" id="home">Homepage</button> -->
+<div id="btn">
+		<button type="button" class="btn draw-border" id="home">Homepage</button>
 
 		<!-- <center> -->
 		<!-- <button type="button" class="btn draw-border" id = "qsort">Quicksort</button> -->
 
+		<button type="button" align="center" class="btn draw-border" id="reset">Randomize</button>
 
 		<!-- </center> -->
 	</div>
+	<div id="sketch-div"></div>
+	
 </body>
 <script src="sketch.js"></script>
 <script>
