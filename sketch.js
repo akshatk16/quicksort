@@ -1,7 +1,7 @@
-let bars = [];
-let thickness = 2;
+let thickness = 4;
 let states = [];
 let done = 0
+let bars = [];
 
 function setup() {
 	let play = 1;
@@ -27,10 +27,12 @@ function resetSketch() {
 	document.getElementById("reset").style.visibility = "hidden";
 
 	bars = new Array(floor(width / thickness));
+
 	for (let i = 0; i < bars.length; i++) {
-		bars[i] = random(height - 10);
+		bars[i] = map(i, 0, width / thickness, 0, height);
 		states[i] = -1;
 	}
+	bars = shuffle(bars)
 	startQSort()
 }
 
@@ -91,10 +93,10 @@ function draw() {
 			fill('#E9328a');
 			flag = 1;
 		} else if (states[i] == 1) {
-			fill('#D6FF00');
+			fill('#191970');
 			flag = 1;
 		} else {
-			fill(255);
+			fill('#224f44');
 		}
 		rect(i * thickness, height - bars[i], thickness, bars[i]);
 	}

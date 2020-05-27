@@ -3,8 +3,6 @@ body {
 	margin: 0;
 	padding: 0;
 	background-color: #1f1a25;
-	/* margin-left: auto;
-  	margin-right: auto; */
 }
 
 canvas {
@@ -14,7 +12,7 @@ canvas {
 .draw-border {
 	box-shadow: inset 0 0 0 4px #58afd1;
 	color: #58afd1;
-	transition: color 0.25s 0.0833333333s;
+	transition: color 0.25s 0.083s;
 	position: absolute;
 	padding: 2em;
 }
@@ -78,8 +76,4 @@ canvas {
 
 .btn:focus {
 	outline: 2px dotted #55d7dc;
-}
-
-#sketch-div {
-	margin-bottom: 8px;
 }
